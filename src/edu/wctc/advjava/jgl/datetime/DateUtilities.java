@@ -26,10 +26,10 @@ public class DateUtilities {
      * This method takes a localDateTime objects and turns it into a string that
      * is formatted as a BASIC_ISO_DATE.
      *
-     * @param date this parameter need to be a LocalDateTime object
-     * @throws IllegalArgumentException if date is null
-     * @return String of the LocalDateTime object that was passed in the
-     * parameters.
+     * @param date this parameter need to be a LocalDateTime object.
+     * @throws IllegalArgumentException if date is null.
+     * @return Returns a String of the LocalDateTime object that was passed in
+     * the parameters.
      */
     public String toString(LocalDateTime date) throws IllegalArgumentException {
         if (date == null) {
@@ -46,10 +46,10 @@ public class DateUtilities {
      *
      * @param date date is a LocalDateTime object
      * @param pattern pattern is a String object.
-     * @throws IllegalArgumentException if date is null
-     * @throws IllegalArgumentException if pattern is null or empty
-     * @return String of the date object passed and formatted as the pattern the
-     * was passed.
+     * @throws IllegalArgumentException if date is null.
+     * @throws IllegalArgumentException if pattern is null or empty.
+     * @return returns a String of the date object passed and formatted as the
+     * pattern the was passed.
      */
     public String toString(LocalDateTime date, String pattern) throws IllegalArgumentException {
         if (pattern == null || pattern.isEmpty()) {
@@ -68,9 +68,9 @@ public class DateUtilities {
      * yyyy-MM-dd.
      *
      * @param dateString dateString is a String object.
-     * @throws IllegalArgumentException if dateString is null or empty
-     * @return LocalDate of the date string that was passed. Formatted as
-     * yyyy=MM-dd.
+     * @throws IllegalArgumentException if dateString is null or empty.
+     * @return Returns a LocalDate of the date string that was passed. Formatted
+     * as yyyy=MM-dd.
      */
     public LocalDateTime toDate(String dateString) throws IllegalArgumentException {
         if (dateString == null || dateString.isEmpty()) {
@@ -88,10 +88,10 @@ public class DateUtilities {
      *
      * @param dateString dateSring is a String object.
      * @param pattern pattern is a String object.
-     * @throws IllegalArgumentException if date is null or empty
-     * @throws IllegalArgumentException if pattern is null or empty
-     * @return A LocalDateTime object of the date String passed, formatted to
-     * the pattern String which was also passed.
+     * @throws IllegalArgumentException if date is null or empty.
+     * @throws IllegalArgumentException if pattern is null or empty.
+     * @return Returns a A LocalDateTime object of the date String passed,
+     * formatted to the pattern String which was also passed.
      */
     public LocalDateTime toDate(String dateString, String pattern) throws IllegalArgumentException {
         if (dateString == null || dateString.isEmpty()) {
@@ -112,7 +112,8 @@ public class DateUtilities {
      * @param localDateTime2 localDateTime2 is a String object.
      * @throws IllegalArgumentException if localDateTime1 is null.
      * @throws IllegalArgumentException if localDateTime2 is null.
-     * @return Calculated the minutes between two dates. Data type long.
+     * @return Returns a Calculated the minutes between two dates. Data type
+     * long.
      */
     public double getDuration(LocalDateTime localDateTime1, LocalDateTime localDateTime2) throws IllegalArgumentException {
         if (localDateTime1 == null || localDateTime2 == null) {
