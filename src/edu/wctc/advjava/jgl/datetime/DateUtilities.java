@@ -26,7 +26,7 @@ public class DateUtilities {
      * This method takes a localDateTime objects and turns it into a string that
      * is formatted as a BASIC_ISO_DATE.
      *
-     * @param date
+     * @param date this parameter need to be a LocalDateTime object
      * @throws IllegalArgumentException if date is null
      * @return String of the LocalDateTime object that was passed in the
      * parameters.
@@ -44,8 +44,8 @@ public class DateUtilities {
      * This method takes LocalDateTime objects and a String of the pattern that
      * you would like it to be formatted to.
      *
-     * @param date
-     * @param pattern
+     * @param date date is a LocalDateTime object
+     * @param pattern pattern is a String object.
      * @throws IllegalArgumentException if date is null
      * @throws IllegalArgumentException if pattern is null or empty
      * @return String of the date object passed and formatted as the pattern the
@@ -67,7 +67,7 @@ public class DateUtilities {
      * This method takes a date string and formats it to the pattern of
      * yyyy-MM-dd.
      *
-     * @param dateString
+     * @param dateString dateString is a String object.
      * @throws IllegalArgumentException if dateString is null or empty
      * @return LocalDate of the date string that was passed. Formatted as
      * yyyy=MM-dd.
@@ -86,8 +86,8 @@ public class DateUtilities {
      * This method takes a date String and a pattern String and turns it into a
      * LocalDateTime object.
      *
-     * @param dateString
-     * @param pattern
+     * @param dateString dateSring is a String object.
+     * @param pattern pattern is a String object.
      * @throws IllegalArgumentException if date is null or empty
      * @throws IllegalArgumentException if pattern is null or empty
      * @return A LocalDateTime object of the date String passed, formatted to
@@ -108,8 +108,8 @@ public class DateUtilities {
      * This method takes two LocalDateTime objects and returns the minutes
      * between the two dates as data type long.
      *
-     * @param localDateTime1
-     * @param localDateTime2
+     * @param localDateTime1 localDateTime1 is a String object.
+     * @param localDateTime2 localDateTime2 is a String object.
      * @throws IllegalArgumentException if localDateTime1 is null.
      * @throws IllegalArgumentException if localDateTime2 is null.
      * @return Calculated the minutes between two dates. Data type long.
