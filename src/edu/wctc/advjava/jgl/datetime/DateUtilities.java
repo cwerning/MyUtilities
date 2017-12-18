@@ -27,6 +27,7 @@ public class DateUtilities {
      * is formatted as a BASIC_ISO_DATE.
      *
      * @param date
+     * @throws IllegalArgumentException if date is null
      * @return String of the LocalDateTime object that was passed in the
      * parameters.
      */
@@ -45,9 +46,8 @@ public class DateUtilities {
      *
      * @param date
      * @param pattern
-     * @exception IllegalArgumentException is thrown if pattern is null or
-     * empty.
-     * @exception IllegalArgumentException is thrown if data is null.
+     * @throws IllegalArgumentException if date is null
+     * @throws IllegalArgumentException if pattern is null or empty
      * @return String of the date object passed and formatted as the pattern the
      * was passed.
      */
@@ -68,6 +68,7 @@ public class DateUtilities {
      * yyyy-MM-dd.
      *
      * @param dateString
+     * @throws IllegalArgumentException if dateString is null or empty
      * @return LocalDate of the date string that was passed. Formatted as
      * yyyy=MM-dd.
      */
@@ -87,6 +88,8 @@ public class DateUtilities {
      *
      * @param dateString
      * @param pattern
+     * @throws IllegalArgumentException if date is null or empty
+     * @throws IllegalArgumentException if pattern is null or empty
      * @return A LocalDateTime object of the date String passed, formatted to
      * the pattern String which was also passed.
      */
@@ -107,6 +110,8 @@ public class DateUtilities {
      *
      * @param localDateTime1
      * @param localDateTime2
+     * @throws IllegalArgumentException if localDateTime1 is null.
+     * @throws IllegalArgumentException if localDateTime2 is null.
      * @return Calculated the minutes between two dates. Data type long.
      */
     public double getDuration(LocalDateTime localDateTime1, LocalDateTime localDateTime2) throws IllegalArgumentException {
