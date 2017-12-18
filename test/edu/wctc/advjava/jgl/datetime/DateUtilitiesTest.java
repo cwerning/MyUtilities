@@ -47,28 +47,28 @@ public class DateUtilitiesTest {
 
     @Test(expected = IllegalArgumentException.class)
     public void toStringDateNullShouldThrowException() {
-        DateUtilities du = new DateUtilities();
-        du.toString(null);
+
+        instance.toString(null);
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void toStringWithPatterDateNullShouldThrowException() {
-        DateUtilities du = new DateUtilities();
-        du.toString(null, "yyyy/MM/dd");
+
+        instance.toString(null, "yyyy/MM/dd");
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void toStringWithPatternPatternNullShouldThrowException() {
-        DateUtilities du = new DateUtilities();
+
         LocalDateTime ldt = LocalDateTime.now();
-        du.toString(ldt, null);
+        instance.toString(ldt, null);
     }
-    
+
     @Test(expected = IllegalArgumentException.class)
     public void toStringWithPatternPatternEmptyShouldThrowException() {
-        DateUtilities du = new DateUtilities();
+
         LocalDateTime ldt = LocalDateTime.now();
-        du.toString(ldt, "");
+        instance.toString(ldt, "");
     }
 
 }
